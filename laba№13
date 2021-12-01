@@ -1,0 +1,41 @@
+Задание 1
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+if -1 <= (a1 - a2) <= 1 and -1 <= (b1 - b2) <= 1:
+    print('YES')
+else:
+    print('NO')
+    
+Задание 2
+side1 = int(input())
+side2 = int(input())
+side3 = int(input())
+if side1 == side2 == side3:
+    print('Равносторонний')
+elif side1 != side2 != side3:
+    print('Разносторонний')
+elif (side1 == side2 != side3) or (side1 == side3 != side2) or (side3 == side2 != side1):
+    print('Равнобедренный')
+
+Задание 3 
+a = float(input())
+minus = 0
+plus = 0
+if a < 0:
+    minus += a
+elif a > 0:
+    plus += a
+else:
+    break
+print('Сумма положительных чисел', plus)
+print('Сумма отрицательных чисел', minus)
+
+Задание 4
+x = 3
+y = 2
+for n in range(0, 50):
+    y += (n + 4) * x ** (n-2)
+    print(y)
+    
