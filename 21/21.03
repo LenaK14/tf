@@ -1,0 +1,36 @@
+1) import re 
+result = re.search(r'abc', 'abc dfe')
+print(result.group(0))
+2) import re 
+result = re.sub(r'Воронеже','Тюмени','Я живу в Воронеже')
+print(result)
+3) import re 
+result = re.findall(r'abc','abc dgfdgh abc hfhf')
+print(result)
+4) import re 
+result = re.match(r'abc', 'abc tdg hfhf')
+print(result)
+5)import re 
+result = re.split(r'м','тюмень')
+print(result)
+6) import re 
+result = re.findall(r'abc/', 'abc dfs tdfs')
+print(result)
+7) import re 
+result = re.findall(r'\w', 'Я живу в воронеже')
+print(result)
+import re 
+result = re.findall(r'\d', '123 2341')
+print(result)
+import re 
+result = re.findall(r'\s', '123 2341')
+print(result)
+8)import re 
+result = re.findall(r'\w+$','я живу в воронеже')
+print(result)
+9)import re 
+result = re.findall(r'|','abc abcd fgd')
+print(result)
+10)import re 
+result = re.split(r'\\n\\s*\\n,string', 'я живу в воронеже')
+print(result)
