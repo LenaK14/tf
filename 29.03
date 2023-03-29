@@ -1,0 +1,28 @@
+1) import itertools
+digits = ['A','B','C']
+for item in itertools.combinations(digits,3):
+    print(item)
+2) import itertools
+somelists = [
+    ['A', 'B', 'C'],
+    ['X', 'Y', 'Z'],
+    ]
+for item in itertools.product(*somelists):
+    print(item)
+3)import itertools
+a = ['A', 'B']
+b = ['X', 'Y']
+c = ['1', '2']
+for item in itertools.combinations(a,b,c):
+    print(item)
+5)import itertools
+if __name__=='__main__':
+    nums = ['A','B','C']
+    a = list(itertools.permutations(nums))
+    print(a)
+7)import itertools
+a = 'abc'
+s = itertools.permutations(a)
+print(s)
+
+    
