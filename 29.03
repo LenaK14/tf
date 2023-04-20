@@ -23,6 +23,19 @@ if __name__=='__main__':
 7)import itertools
 a = 'abc'
 s = itertools.permutations(a)
-print(s)
+print(s)perm = list(itertools.product(lst,repeat=len(lst)))
+print(perm)
+8)import itertools
+def pythagorean_troyki(max_val):
+    for a, b, c in itertools.product(range(1, max_val), repeat=3):
+        if a**2+b**2==c**2:
+            yield(a,b,c)
+max_val=20
+for troyki in pythagorean_troyki(max_val):
+    print(troyki)
+4)import itertools
+lst = ['A','B','C']
+perm = list(itertools.product(lst,repeat=len(lst)))
+print(perm)
 
     
