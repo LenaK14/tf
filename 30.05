@@ -12,9 +12,8 @@ for item in itertools.product(*somelists):
 3)import itertools
 a = ['A', 'B']
 b = ['X', 'Y']
-c = ['1', '2']
-for item in itertools.combinations(a,b,c):
-    print(item)
+c = ['1','2']
+print(list(itertools.product(a,b,c)))
 5)import itertools
 if __name__=='__main__':
     nums = ['A','B','C']
@@ -28,7 +27,13 @@ print(perm)
 8)import itertools
 def pythagorean_troyki(max_val):
     for a, b, c in itertools.product(range(1, max_val), repeat=3):
-        if a**2+b**2==c**2:
+        if a**2+b**2==c**2:import ctypes
+def check_library(library_name):
+    try;
+    ctypes.cdll.LoadLibrary(library_name)
+    print(f"{library_name} is installed.")
+    except OSError:
+        print(f"{library_name} is not installed.")
             yield(a,b,c)
 max_val=20
 for troyki in pythagorean_troyki(max_val):
@@ -37,5 +42,13 @@ for troyki in pythagorean_troyki(max_val):
 lst = ['A','B','C']
 perm = list(itertools.product(lst,repeat=len(lst)))
 print(perm)
+dkr
+import ctypes
+def check_library(library_name):
+    try;
+    ctypes.cdll.LoadLibrary(library_name)
+    print(f"{library_name} is installed.")
+    except OSError:
+        print(f"{library_name} is not installed.")
 
     
